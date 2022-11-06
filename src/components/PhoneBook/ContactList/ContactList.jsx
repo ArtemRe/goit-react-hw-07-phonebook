@@ -1,6 +1,6 @@
 
 import { useDispatch } from 'react-redux';
-import { removeContact } from 'redux/itemsSlice';
+import { removeContact } from 'redux/foneBoockOperators';
 export default function PhoneBookList({ items }) {
   const dispatch = useDispatch();
 
