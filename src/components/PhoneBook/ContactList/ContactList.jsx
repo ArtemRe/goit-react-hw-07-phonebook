@@ -1,5 +1,4 @@
 
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeContact } from 'redux/itemsSlice';
 export default function PhoneBookList({ items }) {
@@ -23,13 +22,3 @@ export default function PhoneBookList({ items }) {
   return <ul>{elements}</ul>;
 }
 
-PhoneBookList.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    })
-  ),
-  removeContact: PropTypes.func.isRequired,
-};
